@@ -1,2 +1,2 @@
 # Rixengine-ads-demo-android
-rixengine ads
+Rixengine ads

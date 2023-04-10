@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+apply plugin: 'applovin-quality-service'
+applovin {
+    apiKey "lLGhani26T8gm4OkVld8fUNfABdnc_tZ6b1P7O4JmvqdeN-PNlbZDyl87-QuDt26AESqtxHyLwuwAdLS7fbSpx"
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.rixengine.demo"
+        minSdkVersion 19
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+
+    buildTypes {
+        debug{
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'androidx.core:core-ktx:1.7.0'
+
+    //alx ad
+    implementation (name:"rixengine.3.8.0",ext:"aar")
+
+    //admob 平台
+    implementation "com.google.android.gms:play-services-ads:22.0.0"
+
+
+    //topon 平台
+    implementation "com.anythink.sdk:core:6.1.68"
+    implementation "com.anythink.sdk:nativead:6.1.68"
+    implementation "com.anythink.sdk:banner:6.1.68"
+    implementation "com.anythink.sdk:interstitial:6.1.68"
+    implementation "com.anythink.sdk:rewardedvideo:6.1.68"
+    implementation "com.anythink.sdk:splash:6.1.68"
+    //Androidx (Necessary)
+//    implementation "androidx.appcompat:appcompat:1.4.1"
+    implementation "androidx.browser:browser:1.0.0"
+    //如果Topon选择了admob,就需要添加
+    implementation "com.anythink.sdk:adapter-admob:6.1.68"
+//    implementation "com.google.android.gms:play-services-ads:21.1.0" //上面已经有
+    // end
+
+
+    //max 平台
+    implementation "com.applovin:applovin-sdk:11.8.2"
+
+
+    //IronSource平台
+    implementation "com.ironsource.sdk:mediationsdk:7.3.0.1"
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+    //end
+
+    //tradplus平台
+    //补充插件的引入，否则会集成失败
+    //noinspection GradleCompatible
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+//    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation "com.tradplusad:tradplus:9.4.0.1"
+    //end
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
