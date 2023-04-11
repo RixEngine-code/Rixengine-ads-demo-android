@@ -3,16 +3,15 @@ package com.rixengine.demo;
 public class AdConfig {
 
     // demo test
-    public static String ALX_HOST = "https://alpha.svr.rixengine.com/rtb";
-    public static String ALX_SID = "36060"; // sid
-    public static String ALX_APP_ID = "102514"; // app_id
-    public static String ALX_TOKEN = "467dedae1cb1365caa2eea6939d87d34"; // token
-
-    public static String ALX_BANNER_AD_PID = "201300"; //banner AD id
-    public static String ALX_NATIVE_AD_PID = "201303";//native AD id
-    public static String ALX_REWARD_VIDEO_AD_PID = "201302";//reward video AD id
-    public static String ALX_INTERSTITIAL_AD_PID = "201301";//interstitial AD id
-    public static String ALX_SPLASH_AD_PID = "172140";//splash AD id
+    public static String ALX_HOST = "http://demo.use.svr.rixengine.com/rtb";
+    public static String ALX_SID = "36057"; // sid
+    public static String ALX_APP_ID = "102512"; // app_id
+    public static String ALX_TOKEN = "c976563eb2f1f134222d2730294e552d"; // token
+    public static String ALX_BANNER_AD_PID = "201304"; //banner AD id
+    public static String ALX_NATIVE_AD_PID = "201307";//native AD id
+    public static String ALX_REWARD_VIDEO_AD_PID = "201306";//reward video AD id
+    public static String ALX_INTERSTITIAL_AD_PID = "201299";//interstitial AD id
+    public static String ALX_SPLASH_AD_PID = "201307";//splash AD id
 
 
     //topon 平台广告配置信息
