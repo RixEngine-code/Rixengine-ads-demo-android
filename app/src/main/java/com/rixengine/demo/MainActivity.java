@@ -55,7 +55,7 @@ public class MainActivity extends BaseListActivity {
     @Override
     public List<AdapterData> initAdapterData() {
         List<AdapterData> list = new ArrayList<>();
-        AdapterData item = new AdapterData("Alxgoix AD Demo", AdListActivity.class);
+        AdapterData item = new AdapterData("Rixengine AD Demo", AdListActivity.class);
         list.add(item);
 
         item = new AdapterData("Admob AD Demo", AdmobDemoListActivity.class);

@@ -42,29 +42,29 @@
         <!-- Alx demo案例-->
         <activity android:name="com.rixengine.demo.rixengine.AdListActivity" />
         <activity android:name="com.rixengine.demo.rixengine.BannerActivity"
-            android:label="Alx Ad: banner"/>
+            android:label="Rixengine Ad: banner"/>
         <activity
             android:name="com.rixengine.demo.rixengine.BannerListViewActivity"
-            android:label="Alx Ad: ListView banner show" />
+            android:label="Rixengine Ad: ListView banner show" />
         <activity
             android:name="com.rixengine.demo.rixengine.BannerRecyclerViewActivity"
-            android:label="Alx Ad: RecyclerView banner show" />
+            android:label="Rixengine Ad: RecyclerView banner show" />
         <activity android:name="com.rixengine.demo.rixengine.RewardVideoActivity"
-            android:label="Alx Ad: reward video"/>
+            android:label="Rixengine Ad: reward video"/>
         <activity android:name="com.rixengine.demo.rixengine.InterstitialActivity"
-            android:label="Alx Ad: interstitial"/>
+            android:label="Rixengine Ad: interstitial"/>
 
         <activity android:name="com.rixengine.demo.rixengine.NativeListActivity"
-            android:label="Alx Ad: native"/>
+            android:label="Rixengine Ad: native"/>
         <activity
             android:name="com.rixengine.demo.rixengine.NativeListViewActivity"
-            android:label="Alx Ad: ListView native show" />
+            android:label="Rixengine Ad: ListView native show" />
         <activity
             android:name="com.rixengine.demo.rixengine.NativeRecyclerViewActivity"
-            android:label="Alx Ad: RecyclerView native show" />
+            android:label="Rixengine Ad: RecyclerView native show" />
         <activity
             android:name="com.rixengine.demo.rixengine.NativeNormalActivity"
-            android:label="Alx Ad: Normal native show" />
+            android:label="Rixengine Ad: Normal native show" />
 
         <!-- TopOn平台 demo案例 -->
         <activity
